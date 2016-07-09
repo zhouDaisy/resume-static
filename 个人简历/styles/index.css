@@ -35,8 +35,9 @@ h2{
 #message{
     width: 1200px;
     height:300px;
-    margin: 0 auto;
+    margin:20px auto;
     padding:30px 0;
+    background-color: #fff0ec;
 }
 #message .base{
     float: left;
@@ -44,7 +45,7 @@ h2{
     height: 224px;
     border:3px dotted #fe6b40;
     padding:20px 10px;
-    margin-left:40px;
+    margin-left:110px;
     cursor: pointer;
     position: relative; 
 }
@@ -55,9 +56,9 @@ h2{
 }
 #message .base i{
     border-width: 7px;
-    border-top-color:#fff;
-    border-right-color:#fff;
-    border-bottom-color:#fff;
+    border-top-color:#fff0ec;
+    border-right-color:#fff0ec;
+    border-bottom-color:#fff0ec;
     display: inline-block;
     width: 0px;
     height: 0px;
@@ -70,19 +71,55 @@ h2{
     margin-top:13px;
     font-size: 14px;
 }
+/*myself*/
 #myself{
-    line-height:25px;
+    width:1200px;
+    height: 600px;
+    margin: 10px auto;
+    border:15px solid transparent;
+    -webkit-border-image:url(face.png) 30 30 round; /* Safari 5 */
+    -moz-border-image:url(face.png) 30 30 round; /* Opera */
+    border-image:url(face.png) 30 30 round;
+    overflow: hidden;
+
 }
-#myself p{
-    font-size: 14px;
+#myself .title{
+    width: 500px;
+    height:80px;
+    border-radius:50%;
+    background-color: #4fce22;
+    text-align: center;
+    line-height: 80px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+#myself .appraise{
+    width:550px;
+    height:40px;
+    line-height: 40px;
+    border:1px dotted #4fce22;
+    margin-top:10px; 
+}
+#myself .left{
+    float: left;
+}
+#myself .right{
+    float: right;
+}
+#myself .talk{
+    padding:20px;
+    width:550px;
+    height:200px;
+    border:1px dotted #4fce22;
+    line-height:30px;
     margin-top:10px;
-    text-indent:2em;
 }
 /*works*/
 #works{
     width: 1200px;
-    height:450px; 
-    margin: 0 auto;
+    height:350px; 
+    margin:20px auto;
 }
 .works_top{
     width: 1200px;
@@ -118,7 +155,7 @@ h2{
     height: 0px;
     width: 0px;
     position: relative;
-    left:450px;
+    left:470px;
     top:20px;
 }
 .null2{
@@ -128,19 +165,8 @@ h2{
     height: 0px;
     width: 0px;
     position: relative;
-    left:580px;
+    left:600px;
     top:20px;
-    display: none;
-}
-.null3{
-    border-style:dotted dotted solid;
-    border-width:20px;
-    border-color:transparent transparent #a6a6a6; 
-    height: 0px;
-    width: 0px;
-    position: relative;
-    left:720px;
-    top:40px;
     display: none;
 }
 /*works_content*/
@@ -148,7 +174,7 @@ h2{
     border:1px solid #a6a6a6;
     padding-top: 20px;
     overflow-y: scroll;
-    width:560px;
+    width:1000px;
     height:200px;
     background-color: #fff;
     margin:20px auto;
@@ -161,98 +187,167 @@ h2{
     display: none;
 }
 #code img{
- width: 130px;
- height:130px;
+    width: 130px;
+    height:130px;
 }
-/*display*/
-#works #display{
-    padding-top: 20px;
-    width:600px;
-    height: 300px;
-    background-color: #fff;
-    margin:40px auto;
-    display: none;
-    border:1px solid #a6a6a6;
+/*production*/
+#production{
+    width:1000px;
+    height:420px;
+    margin:0 auto;
+    position:relative;
+    background-color:#fff0ec;
 }
-#display_loop{
+#production_loop{
     position:relative;
     z-index: 2;
 }
-#display img{
+#production_imgs img{
     position:absolute;
+    left:400px;
+    width:600px;
+    height:420px;
 }
-#display_pages{
+#production_pages{
     position:absolute;
     z-index:3;
-    left:270px;
-    top:270px;
+    left:630px;
+    top:400px;
 }
-#display_pages li{
+#production_pages li{
     float:left;
-    border-radius:100%;
+    border-radius:50%;
     width: 10px;
     height: 10px;
     margin-right:10px;
-    background-color:#7b7b7c;
+    background-color: #7b7b7c;
     cursor:pointer;
 }
-#display_pages .selected{
-    background:#fe6b40;
+#production_pages .selected{
+    background: #fff;
 }
-#display_finger{
+#production_finger{
     position:absolute;
     text-align: center;
     z-index:3;
     display:none;
     cursor: pointer;
 }
-#display:hover #display_finger{
+#production:hover #production_finger{
     display: block;
 }
-#display_finger #left_finger,#display_finger #right_finger{
-    background-color: #fe6b40;
+#production_finger #left_finger,#production_finger #right_finger{
+    background-color: #000;
     filter:alpha(opacity=50); 
     -moz-opacity:0.5;  
     -khtml-opacity: 0.5;  
     opacity: 0.5;  
-    width:30px;
-    height:50px;
-    line-height:50px;
+    width:40px;
+    height: 80px;
+    line-height: 80px;
 }
-#display_finger #left_finger{
+#production_finger #left_finger{
     position:absolute;
-    top:120px;
+    left:400px;
+    top:190px;
 }
-#display_finger #right_finger{
+#production_finger #right_finger{
     position: absolute;
-    left:570px;
-    top:120px;
+    left:960px;
+    top:190px;
 }
 
 #left_finger i,#right_finger i{
     font-size:30px;
     color:#fff;
 }
-#display_imgs img{
-  width:400px;
-  height:260px;
-  margin-left: 110px;
-}
-/*address*/
-.address{
-    border:3px dotted #fe6b40;
-    width: 450px;
-    height:250px;
-    margin:0 auto;
+#production_content{
     overflow: hidden;
-    padding:20px 0 0 50px;
+    width: 550px;
+    height:420px;
+    margin:20px 50px;
 }
-.address a{
-    display: block;
-    text-indent: 4em;
-    color:#177115;
+#production_list{
+    position: absolute;
+    z-index:2;
+    background-color:#fff0ec; 
+    filter:alpha(opacity=50); 
+    -moz-opacity:0.5;  
+    -khtml-opacity: 0.5;  
+    opacity: 0.5;  
+}
+#production_list li{
+    cursor: pointer;
+    width:210px;
+    padding: 23px 0px 20px 15px;
+    border-bottom: 0.5px solid #dedede;
     font-size: 14px;
 }
-.address a:hover{
+
+#production_list a{
+    font-size: 13px;  
+}
+#production_list a:hover{
+    color: #f01414 !important;
+}
+ #production_message{
+    position: absolute;
+    left:290px;
+    width:400px;
+}
+#production_message .production_message{
+    width: 100%;
+    height:420px;
+    display:none;
+    position:absolute;
+    z-index: 7;
+    background-image: url(bg.jpg) 
+}
+#production_message .production_message a{
+    display: block;
+    width:350px;
+    height:100px;
+    line-height:100px;
+    text-align: center;
+    font-size: 14px;
+    font-size:20px;
+    color:black;
+}
+#production_message .production_message a:hover{
     color:red;
+}
+
+#production_message .selected{
+    display: block;
+    background-color: #fff;
+}
+#production_list li:hover{
+    background-color:#fe6b40;
+}
+#display{
+    width:100px;
+    height:300px;
+    border-radius: 50%;
+    background-color:#fff0ec;
+    text-align: center;
+    line-height:300px;
+    position:absolute;
+    top:1500px;
+    left: 30px;
+    font-weight: bold;
+}
+#null3{
+    width: 100px;
+    height: 50px;
+    background-color: #fff0ec;
+    position: absolute;
+    top: 1630px;
+    left:125px;
+}
+#experience{
+    width: 1200px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left:80px;
+    border:3px dotted #4fce22;
 }
