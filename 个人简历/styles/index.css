@@ -74,7 +74,7 @@ h2{
 /*myself*/
 #myself{
     width:1200px;
-    height:650px;
+    height:700px;
     margin: 10px auto;
     border:15px solid transparent;
     -webkit-border-image:url(face.png) 30 30 round; /* Safari 5 */
@@ -95,22 +95,22 @@ h2{
     font-weight: bold;
 }
 #myself .appraise{
-    width:560px;
+    width:570px;
     height:30px;
     line-height:30px;
     border:1px dotted #4fce22;
-    margin-top:10px; 
+    margin-top:8px; 
     cursor: pointer;
 }
 #myself .appraise:hover,#myself .appraises:hover{
     background-color:#ffad96;
 }
 #myself .appraises{
-     width:560px;
-    height:170px;
-    line-height:34px;
+     width:570px;
+    height:250px;
+    line-height:36px;
     border:1px dotted #4fce22;
-    margin-top:10px;
+    margin-top:8px;
     cursor: pointer; 
 }
 #myself .left{
@@ -121,11 +121,11 @@ h2{
 }
 #myself .talk{
     padding:20px;
-    width:560px;
+    width:570px;
     height:200px;
     border:1px dotted #4fce22;
     line-height:30px;
-    margin-top:10px;
+    margin-top:8px;
     cursor: pointer;
 }
 #myself .talk:hover{
