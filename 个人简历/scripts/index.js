@@ -77,6 +77,6 @@ $(document).ready(function(){
    $(function () {
     setTimeout(function () {
     alert("哈哈O(∩_∩)O谢谢来看我！"); 
-    } , 6000);
+    } ,10000);
     })
 })
